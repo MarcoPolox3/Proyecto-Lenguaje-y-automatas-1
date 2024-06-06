@@ -1,0 +1,28 @@
+program primos;
+
+var
+    n, i, j: integer;
+    esPrimo: string;
+
+begin
+    writeln("Ingrese un numero entero positivo:");
+    read(n);
+
+    writeln("Los factores primos de ", n, " son: ");
+
+    for i := 2 to n do
+    begin
+        esPrimo := true;
+        for j := 2 to trunc(sqrt(i)) do
+        begin
+            if (i mod j) = 0 then
+            begin
+                esPrimo := false;
+                break;
+            end;
+        end;
+
+        if esPrimo and (n mod i = 0) then
+            writeln("    ", i);
+    end;
+end.

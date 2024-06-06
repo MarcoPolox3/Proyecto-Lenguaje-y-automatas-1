@@ -1,0 +1,6 @@
+program ejemplo;
+var
+    a integer {Espera puntos de cierre}
+begin
+    write(a)
+end.

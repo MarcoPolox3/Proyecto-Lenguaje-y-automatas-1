@@ -1,0 +1,13 @@
+program Suma; { Ejemplo PDF }
+var
+    a, b, c, resultado: integer;
+begin
+    write("Ingrese el primer numero: ");
+    read(a);
+    write("Ingrese el segundo numero: ");
+    read(b);
+    write("Ingrese el tercer numero: ");
+    read(c);
+    resultado := a + b + c;
+    writeln("El resultado es: ", resultado);
+end.
